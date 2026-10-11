@@ -171,6 +171,10 @@ header {
 .llm-essay {
   max-width: 88rem;
   padding: clamp(2rem, 5vw, 4.5rem);
+
+  p {
+      margin-bottom: 1.5rem;
+  }
 }
 
 .llm-essay h2 {
@@ -182,6 +186,7 @@ header {
   border-left: 3px solid var(--text-muted-light-md);
   color: var(--base-text-dk-md) !important;
   font-size: 1.9rem !important;
+  margin-bottom: 1.5rem;
 }
 
 .llm-essay h3 {
