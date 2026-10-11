@@ -1,6 +1,7 @@
 # IA#1 Personal Portfolio - Documentation 
 
 *Deployed Site:* https://agranston-2602727-utech.github.io/2602727_IA1_S1AY27_AGranston/
+*GitHub Site:* https://github.com/agranston-2602727-utech/2602727_IA1_S1AY27_AGranston/
 
 Storyboards, asset and styling inventory, and APA 7th edition references for the portfolio website.
 
