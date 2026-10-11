@@ -1,0 +1,176 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.development-nav {
+  width: min(100% - 2rem, 110rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.development-nav .back-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.development-page {
+  width: min(100% - 2rem, 110rem);
+  margin: 0 auto 5rem;
+}
+
+.development-intro {
+  max-width: 84rem;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 0.8rem;
+  color: var(--text-muted-light-md);
+  font-size: 1.4rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+.development-intro h1 {
+  font-size: clamp(3.4rem, 6vw, 5.2rem);
+  line-height: 1.1;
+}
+
+.intro-copy {
+  max-width: 70rem;
+  margin: 1.8rem auto;
+  color: var(--text-muted-dk-md);
+  font-size: 1.9rem;
+  line-height: 1.7;
+}
+
+.book-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--text-muted-light-md);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.chapter-section {
+  margin: 0 auto 6rem;
+}
+
+.chapter-heading {
+  max-width: 78rem;
+  margin-bottom: 2.4rem;
+}
+
+.chapter-heading h2,
+.takeaway h2 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  line-height: 1.2;
+}
+
+.chapter-heading > p:last-child,
+.lesson-card p,
+.takeaway > p:last-child,
+.book-reference p {
+  color: var(--text-muted-dk-md);
+  font-size: 1.7rem;
+  line-height: 1.75;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+.lesson-card {
+  padding: 2.4rem;
+  border: 1px solid var(--bg-light-dk-md);
+  border-radius: 1rem;
+  background: var(--bg-base-dk-md);
+}
+
+.lesson-number {
+  color: var(--text-muted-dk-md);
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+}
+
+.lesson-card h3 {
+  margin: 0.8rem 0 1rem;
+  font-size: 2.2rem;
+}
+
+.laws-grid .lesson-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.takeaway {
+  max-width: 88rem;
+  margin: 0 auto 5rem;
+  padding: clamp(2.2rem, 5vw, 4.5rem);
+  border: 1px solid var(--bg-light-dk-md);
+  border-left: 3px solid var(--text-muted-light-md);
+  border-radius: 1rem;
+  background: var(--bg-base-dk-md);
+}
+
+.book-reference {
+  max-width: 88rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bg-light-dk-md);
+}
+
+.book-reference h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.book-reference p + p {
+  margin-top: 0.6rem;
+}
+
+.book-reference a {
+  color: var(--base-text-dk-md);
+  text-underline-offset: 0.3rem;
+}
+
+.development-footer {
+  padding: 2rem;
+  background: var(--bg-base-dk-md);
+  color: var(--text-muted-dk-md);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.development-footer a {
+  color: var(--base-text-dk-md);
+}
+
+@media (max-width: 700px) {
+  .lesson-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .laws-grid .lesson-card:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .development-nav {
+    flex-wrap: wrap;
+  }
+
+  .development-nav .nav-name {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+}

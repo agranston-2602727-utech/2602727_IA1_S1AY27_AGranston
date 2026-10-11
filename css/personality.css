@@ -1,0 +1,237 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.personality-nav {
+  width: min(100% - 2rem, 110rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.personality-nav .back-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.personality-page {
+  width: min(100% - 2rem, 110rem);
+  margin: 0 auto 5rem;
+}
+
+.page-intro {
+  max-width: 82rem;
+  margin: 0 auto 5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 0.8rem;
+  color: var(--text-muted-light-md);
+  font-size: 1.4rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+.page-intro h1 {
+  font-size: clamp(3.4rem, 6vw, 5.2rem);
+  line-height: 1.1;
+}
+
+.intro-copy {
+  max-width: 65rem;
+  margin: 1.6rem auto 0;
+  color: var(--text-muted-dk-md);
+  font-size: 1.9rem;
+  line-height: 1.7;
+}
+
+.traits-section,
+.hero-section,
+.llm-essay {
+  margin: 0 auto 5rem;
+}
+
+.traits-section > h2,
+.hero-section h2,
+.llm-essay h2 {
+  margin-bottom: 2rem;
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  line-height: 1.2;
+}
+
+.trait-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.trait-card,
+.hero-copy,
+.hero-reason,
+.llm-essay {
+  border: 1px solid var(--bg-light-dk-md);
+  border-radius: 1rem;
+  background: var(--bg-base-dk-md);
+}
+
+.trait-card {
+  padding: 2.4rem;
+}
+
+.trait-number {
+  color: var(--text-muted-dk-md);
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.trait-card h3,
+.hero-reason h3,
+.llm-essay h3 {
+  margin: 1rem 0;
+  font-size: 2.3rem;
+}
+
+.trait-card p,
+.hero-section p,
+.hero-reason li,
+.llm-essay > p:not(.eyebrow) {
+  color: var(--text-muted-dk-md);
+  font-size: 1.65rem;
+  line-height: 1.75;
+}
+
+.trait-impact {
+  margin-top: 1.5rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--bg-light-dk-md);
+}
+
+.trait-impact strong {
+  color: var(--base-text-dk-md);
+}
+
+.hobby-note {
+  margin-top: 2rem;
+  padding: 1.8rem 2rem;
+  border-left: 3px solid var(--text-muted-light-md);
+  background: var(--bg-base-dk-md);
+  color: var(--text-muted-dk-md);
+  font-size: 1.7rem;
+  line-height: 1.7;
+}
+
+.hobby-note strong {
+  color: var(--base-text-dk-md);
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(25rem, 1fr);
+  gap: 2rem;
+}
+
+.hero-copy,
+.hero-reason {
+  padding: clamp(2rem, 4vw, 3.5rem);
+}
+
+.hero-copy blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 3px solid var(--text-muted-light-md);
+  color: var(--base-text-dk-md);
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.hero-reason ul {
+  margin: 1rem 0 2rem 2rem;
+}
+
+.hero-reason li + li {
+  margin-top: 0.8rem;
+}
+
+.source-note {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--bg-light-dk-md);
+  font-size: 1.35rem !important;
+}
+
+.source-note a,
+.essay-references a {
+  color: var(--base-text-dk-md);
+  text-underline-offset: 0.3rem;
+}
+
+.llm-essay {
+  max-width: 88rem;
+  padding: clamp(2rem, 5vw, 4.5rem);
+}
+
+.llm-essay h2 {
+  margin-bottom: 2rem;
+}
+
+.llm-essay .essay-lead {
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--text-muted-light-md);
+  color: var(--base-text-dk-md) !important;
+  font-size: 1.9rem !important;
+}
+
+.llm-essay h3 {
+  margin-top: 3rem;
+}
+
+.essay-references {
+  margin: 1rem 0 0 2rem;
+  color: var(--text-muted-dk-md);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.personalize-note {
+  margin-top: 2.4rem !important;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--bg-light-dk-md);
+  font-size: 1.4rem !important;
+}
+
+.personality-footer {
+  padding: 2rem;
+  background: var(--bg-base-dk-md);
+  color: var(--text-muted-dk-md);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.personality-footer a {
+  color: var(--base-text-dk-md);
+}
+
+@media (max-width: 800px) {
+  .trait-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .personality-nav {
+    flex-wrap: wrap;
+  }
+
+  .personality-nav .nav-name {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+}
