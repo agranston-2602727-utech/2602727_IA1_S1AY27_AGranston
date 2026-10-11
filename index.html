@@ -10,11 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media-query.css">
+  <link rel="icon" href="img/main-logo.png">
 </head>
 <body>
   <header>
     <nav>
-      <p class="nav-name">AmosCodes</p>
+      <p class="nav-name">2602727</p>
+      <div class="page-links">
+        <ul>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="personality.html">Personal</a></li>
+          <li><a href="development.html">Development</a></li>
+        </ul>
+      </div>
       <div class="social-icons">
         <ul>
           <li>
@@ -28,7 +36,7 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/thony_codes/" title="Instagram icons">
+            <a href="https://www.instagram.com/amos_codes/" title="Instagram icons">
               <img src="img/instagram-logo.png" alt="Instagram"/>
             </a>
           </li>
@@ -40,15 +48,18 @@
   <main>
     <section class="about-us">
       <figure class="main-img-container">
-        <img src="img/anthony.png" alt="Anthony Granston">
+        <a href="mailto:schodavarapu@utech.edu.jm">
+          <img src="img/anthony.png" alt="Anthony Granston">
+        </a>
       </figure>
       <div>
         <h1>Hello 🙌 Welcome, I'm <span id="h1-span">Anthony Granston</span></h1>
-        <p>I'm an aspiring software engineer with a strong passion for continuously developing and implementing innovative projects.</p>
-        <h4>CONTACT ME</h4>
+        <p>I'm an aspiring software engineer from the Univeristy of Technology with a strong passion for continuously developing and implementing innovative projects.</p>
+        <a href="#contact">
+          <h4>CONTACT ME</h4>
+        </a>
       </div>
     </section>
-
 
     <section class="skills-section">
       <article class="skill-1">
@@ -156,10 +167,26 @@
 
       </section>
     </div>
+    <!-- <section class="pdf-container" aria-labelledby="resume-heading">
+      <div class="pdf-header">
+        <h2 id="resume-heading">My Resume</h2>
+        <a href="assets/Anthony_Granston-Tech-Resume-2026.pdf" target="_blank" rel="noopener">
+          Open PDF
+        </a>
+      </div>
+
+      <iframe
+        class="pdf-viewer"
+        src="assets/Anthony_Granston-Tech-Resume-2026.pdf"
+        title="Anthony Granston's resume"
+        loading="lazy">
+      </iframe>
+    </section> -->
   </main>
 
+  </section>
   <footer>
-    <section class="contact-info">
+    <section class="contact-info" id="contact">
       <h2>Contact</h2>
       <p>I would love to hear about your feedback on my projects enter your contact details and I Will reach out as soon as possible</p>
     </section>
